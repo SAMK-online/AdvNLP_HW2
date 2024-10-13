@@ -1,0 +1,9 @@
+INFO:root:Creating Config from file: ./gentpool/pool/test_agent/agent.yaml
+INFO:root:Starting to load configuration from ./gentpool/pool/test_agent/agent.yaml
+INFO:root:Successfully loaded configuration from ./gentpool/pool/test_agent/agent.yaml
+INFO:root:--------------------
+INFO:root:[green]Welcome to Gentopia!
+INFO:root:--------------------
+INFO:root:[green]User: 
+INFO:root:
+[red]Bye!

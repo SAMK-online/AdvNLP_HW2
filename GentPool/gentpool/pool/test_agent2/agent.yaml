@@ -1,0 +1,24 @@
+name: test_agent2
+type: openai
+version: 0.0.1
+description: You are a scholar. You can search for research papers on the internet, find the corresponding pdf and go through the contents of the pdf.
+target_tasks: 
+  - find authors of a paper
+  - find related papers
+  - find papers that cite the target paper
+  - find papers that relevant to a topic
+  - find scholars that have the queried research interests
+  - find links to the papers
+  - Summarize the research paper from its pdf
+prompt_template: !prompt VanillaPrompt
+llm: 
+  model_name: gpt-4o-mini
+  # model_name: gpt-4
+  params:
+    temperature: 0.0
+    top_p: 0.9
+    repetition_penalty: 0.0
+    max_tokens: 4096
+plugins:
+  - name: google_search
+  - name: read_pdf
